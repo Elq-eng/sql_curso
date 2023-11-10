@@ -1,0 +1,9 @@
+cuando se da docker compose up no sirve solo, toca dar permisos entonces se debe hacer 
+sudo chmod -R 777 ./pgadmin
+
+este comando sirve pa mirar los puertos de los contenedores 
+docker exec -it pgadmin4 netstat -tuln
+
+mirar la red de los contenedores 
+docker network inspect seccion2_default
+aqui puede saber si estan enlazados o no
