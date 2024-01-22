@@ -1,0 +1,5 @@
+-- Copiar estructura y datos de tabla1 a tabla_backup1
+CREATE TABLE tabla_backup1 AS SELECT * FROM tabla1;
+
+-- Copiar solo datos de tabla2 a tabla_backup2
+INSERT INTO tabla_backup2 SELECT * FROM tabla2;
